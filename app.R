@@ -24,34 +24,34 @@ library(stringr)
 options(scipen = 999)
 
 #load all files
-year_2012 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2012_c20220107.csv.gz") %>%
+year_2012 <- read.csv("StormEvents_details-ftp_v1.0_d2012_c20220107.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2013 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2013_c20220124.csv.gz") %>%
+year_2013 <- read.csv("StormEvents_details-ftp_v1.0_d2013_c20220124.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2014 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2014_c20211217.csv.gz") %>%
+year_2014 <- read.csv("StormEvents_details-ftp_v1.0_d2014_c20211217.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2015 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2015_c20211217.csv.gz") %>%
+year_2015 <- read.csv("StormEvents_details-ftp_v1.0_d2015_c20211217.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2016 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2016_c20211217.csv.gz") %>%
+year_2016 <- read.csv("StormEvents_details-ftp_v1.0_d2016_c20211217.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2017 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2017_c20220124.csv.gz") %>%
+year_2017 <- read.csv("StormEvents_details-ftp_v1.0_d2017_c20220124.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2018 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2018_c20220124.csv.gz") %>%
+year_2018 <- read.csv("StormEvents_details-ftp_v1.0_d2018_c20220124.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2019 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2019_c20220124.csv.gz") %>%
+year_2019 <- read.csv("StormEvents_details-ftp_v1.0_d2019_c20220124.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2020 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2020_c20220124.csv.gz") %>%
+year_2020 <- read.csv("StormEvents_details-ftp_v1.0_d2020_c20220124.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
-year_2021 <- read.csv("C:/Users/lhern/OneDrive/Desktop/STAA 566/StormData/StormEvents_details-ftp_v1.0_d2021_c20220124.csv.gz") %>%
+year_2021 <- read.csv("StormEvents_details-ftp_v1.0_d2021_c20220124.csv.gz") %>%
     select(YEAR, EVENT_TYPE, EVENT_ID, STATE, CZ_NAME, BEGIN_DATE_TIME, CZ_TIMEZONE, INJURIES_DIRECT, INJURIES_INDIRECT, DEATHS_DIRECT, DEATHS_INDIRECT, DAMAGE_PROPERTY, DAMAGE_CROPS, BEGIN_LAT, BEGIN_LON, TOR_F_SCALE, TOR_LENGTH, TOR_WIDTH, EPISODE_NARRATIVE, SOURCE) %>%
     filter(EVENT_TYPE == "Tornado")
 
